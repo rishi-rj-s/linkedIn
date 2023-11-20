@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: rgb(235,235,235);
+}
+
+
+/*  NAVBAR STARTS */
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 4rem;
+    background: white;
+}
+
+nav .wrapper .left,
+nav .wrapper .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .wrapper .left{
+    padding-right: 1rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+nav .wrapper .logo i{
+    font-size: 2.5rem;
+    color: #0b6ac9;
+    cursor: pointer;
+}
+
+nav .wrapper .left .input{
+    background: rgb(222, 230, 231);
+    width: 100%;
+    padding: 0.5rem .4rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
+nav .wrapper .left .input input[type='search']{
+    width: 16rem;
+    border: none;
+    background: transparent;
+}
+
+nav .wrapper .left .input input[type='search']::placeholder{
+    font-size: small;
+    color: rgb(49, 49, 49);
+    font-weight: 100;
+}
+
+nav .wrapper .left .input i{
+    font-size: small;
+    color: rgb(63, 48, 48);
+}
+
+nav .wrapper .right .home, .networks, 
+.jobs, .messaging, .notifications, 
+.me, .business, .user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+nav .wrapper .right h6{
+    font-weight: 300;
+}
+
+nav .wrapper .right .home:hover,
+nav .wrapper .right .networks:hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .messaging:hover,
+nav .wrapper .right .business .down:hover,
+nav .wrapper .right .notifications:hover,
+nav .wrapper .right .user .down:hover{
+    color: black;
+}
+
+nav .wrapper .right .networks, 
+.jobs, .messaging, .notifications, 
+.user, .business{
+    color: gray;
+}
+
+nav .wrapper .right .home, .networks, 
+.jobs, .messaging, .notifications, 
+.me, .business, .user i{
+    font-size: 1.2rem;
+}
+
+nav .wrapper .right .user .down,
+nav .wrapper .right .business .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: gray;
+}
+
+nav .wrapper .right .user img{
+    background: gray;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper a{
+    font-size: 0.7rem;
+    width: 6rem;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(119, 51, 26);
+}
+
+/*  NAVBAR ENDS */
+
+
+/*  FIRST SIDEBAR BLOCK STARTS */
+
+.container {
+    display: grid;
+    grid-template-columns:20% 55% 30%;
+    gap: 1.4rem;
+    width: auto;
+    margin: 1.5rem 13rem 1rem 8rem;
+    position: relative;
+}
+
+aside .sidebar{
+    background: #fff;
+    width: 100%;
+    height: 46vh;
+    border-radius: 0.8rem;
+    border: 1px  solid rgb(214, 210, 210);
+    overflow: hidden;
+}
+
+.sidebar .top{
+    width: 20%;
+    height: 8vh;
+    background-color: rgb(8, 7, 7);
+    position: absolute;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 3.5%;
+    border-radius: 52%;
+   width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+ 
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: 5%; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    height: 9vh;
+}
+
+aside .sidebar .profile h6{
+    font-size: small;
+}
+
+aside .sidebar .profile a{
+    color: black;
+    text-decoration: none;
+}
+
+aside .sidebar .profile small{
+    color: gray;
+    font-size: 70%;
+}
+
+.sidebar .connections{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 1rem;
+    top: 6%;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.sidebar .connections .connection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.sidebar .connections .connection h6{
+    color: gray;
+}
+
+.sidebar .connections:hover{
+    background-color: rgb(230, 227, 227);
+}
+
+.sidebar .connections .connection a{
+    color: blue;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.sidebar .writings{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 6%;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.sidebar .writings .writing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.2rem 1.3rem;
+}
+.sidebar .writings .writing small{
+    color: rgb(87, 86, 86);
+    font-size: 11px;
+}
+.sidebar .writings .writing i{
+    color: rgb(221, 169, 100);
+}
+
+.sidebar .writings .writing a{
+    color: black;
+}
+
+.sidebar .writings:hover{
+    background-color: rgb(230, 227, 227);
+}
+
+.sidebar .bookmarks{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 8%;
+    cursor: pointer;
+    margin-left: 1.3rem;
+}
+
+.sidebar .bookmarks .mybookmark{
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    color: rgb(83, 82, 82);
+    margin-top: 0.5rem;
+}
+
+.sidebar .bookmarks:hover{
+    background-color: rgb(230, 227, 227);
+}
+
+/*  FIRST SIDEBAR BLOCK FINISHED */
+
+
+/* SECOND SIDEBAR BLOCK STARTS */
+
+aside .recent_jobs{
+    background: #fff;
+    width: 100%;
+    height: 81vh;
+    margin-top: 0.5rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 1px  solid rgb(214, 210, 210);
+}
+
+aside .recent_jobs .recent{
+    margin: 1rem;
+}
+
+aside .recent_jobs .recent .one:hover{
+    background-color: rgb(209, 207, 207);
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;  
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+    color: rgb(77, 75, 75);
+    font-size: 15px;
+    padding: 0.3rem 0.4rem 0.3rem 0.1rem;
+}
+
+aside .recent_jobs .recent .one a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+
+aside .recent_jobs .recent .one i{
+    font-size: 0.7rem;
+    color: rgb(32, 32, 32);
+}
+
+aside .groups{
+    background: #fff;
+    margin-top: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+aside .groups .headgroup{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside .groups .grouphead{
+    color: blue;
+}
+
+aside .groups .headgroup i {
+    margin-right: 3%;
+}
+
+aside .groups .grouphead {
+    text-decoration: none;
+}
+
+aside .groups .grouphead:hover{
+    text-decoration: underline;
+}
+
+aside .groups .two{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    color: rgb(77, 75, 75);
+    padding: 0.3rem 0.4rem 0.3rem 0.1rem;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+aside .groups .two:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+aside .groups .two i{
+    font-size: 0.7rem;
+    color: rgb(32, 32, 32);
+}
+
+aside .groups .two a{
+    text-decoration: none;
+    padding: 0 0.4rem 0 0.4rem;
+    color: rgb(80, 79, 79);
+}
+
+aside .groups .two .see_all{
+    margin-left: 1.2rem;
+}
+
+aside .groups .two .angle{
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .events{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0.1rem;
+}
+
+aside .events a{
+    font-size: px;
+    color: blue;
+    text-decoration: none;
+}
+
+aside .events i{
+    margin-right: 3%;
+}
+
+
+aside .events a:hover{
+    text-decoration: underline;
+}
+
+aside .borderbot{
+    margin-top: 10%;
+    position: relative;
+    right: 10%;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+aside .hashtags a{
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+aside .hashtags a:hover{
+    text-decoration: underline;
+}
+aside .discover{
+    text-align: center;
+    font-size: 17px;
+    margin-right: 12%;
+    padding: 1rem 1rem;
+}
+
+aside .discover h6{
+    
+    color: rgb(97, 96, 96);
+}
+
+aside .discover:hover{
+    background-color: rgb(218, 214, 214);
+}
+
+aside .discover a{
+    text-decoration: none;
+}
+
+/* SECTION ENDS */
+
+/* MAIN SECTION */
+
+
+main .media{
+    background: white;
+    border-radius: 0.8rem;
+    height: 18vh;
+    border: 1px  solid rgb(214, 210, 210);
+    width: auto;
+}
+
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main .media .search img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0 01.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+main .media .search input:hover{
+    background: rgb(238, 237, 237);
+}
+
+main .media .posting{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.1rem 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+main .media .posting .posting1{
+    display: flex;
+    gap: 1rem;
+    padding: 0.4rem ;
+}
+
+main .media .posting .posting1:hover{
+    background-color: rgb(209, 209, 209);
+    border-radius: 9%;
+}
+
+main .media .posting .posting1 h5{
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+}
+
+main .media .posting .posting1:nth-child(1) i{
+    color: blue;
+}
+
+main .media .posting .posting1:nth-child(2) i{
+    color: rgb(196, 161, 8);
+}
+
+main .media .posting .posting1:nth-child(3) i{
+    color: rgb(231, 72, 9);
+}
+
+main .line{
+    margin-top: 0.8rem;
+    border-bottom: 1px solid rgb(170, 169, 169);
+}
+
+main .main_section{
+    margin-top: 0.8rem;
+    background: white;
+    border-radius: 0.8rem;
+    height: 122vh;
+    border: 1px  solid rgb(214, 210, 210);
+    position: relative;
+}
+
+main .event{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0 1.2rem;
+}
+
+main .event img{
+    height: 8%;
+    width: 8%;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+
+main .event .profile_name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+}
+
+main .event .profile_name h3{
+    font-weight: 600;
+    font-size: 12px;
+}
+main .event .profile_name a{
+    text-decoration: none;
+    color: black;
+}
+
+main .event .profile_name a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+main .event .profile_name small{
+    font-weight: 300;
+    font-size: 10px;
+}
+
+main .description p{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+main .main_section .box img{
+    width: 100%;
+    height: 100%;
+}
+
+main .main_section .box .content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-bottom: 0.3rem;
+    background-color: rgb(227, 236, 247);
+}
+
+main .main_section .box .content h5{
+    padding-bottom: 0.3rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main .main_section .box .content small{
+    font-weight: 100;
+    font-size: 11px;
+    margin-top: 0.3rem;
+}
+
+main .main_section .register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    color: blue;
+    padding: 0.3rem;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(212, 210, 210);
+}
+
+main .main_section .register:hover{
+    background-color: rgb(232, 249, 250);
+}
+
+main .main_section .register i{
+    margin-top: 0.3rem;
+    
+}
+
+main .main_section .box .interactions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    font-size: x-small;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid rgb(212, 210, 210);
+}
+
+main .main_section .box .interactions .counts{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 12px;
+}
+
+main .main_section .box .interactions .counts i{
+    color: blue;
+    transform: scaleX(-1);
+    margin-top: 0.1rem;
+}
+
+main .main_section .box .interactions .comments{
+    margin-right: 1rem;
+}
+
+main .main_section .box .interact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main .main_section .box .interact .like{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+main .main_section .box .interact .like:hover{
+    background-color: rgb(218, 218, 218);
+    border-radius: 8%;
+}
+
+main .main_section .box .interact .like h4{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+main .main_section .box .interact .like i{
+    margin-top: 0.2rem;
+    color: rgb(95, 95, 95);
+}
+
+main .main_section .box .interact .like i:nth-child(1){
+    transform: scaleX(-1);
+}
+
+
+
+/* MAIN SECTION ENDS */
+
+/* RIGHT SIDE */
+
+.right_side{
+    background: white;
+    border-radius: 0.8rem;
+    height: 53vh;
+}
+
+.right_side .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.right_side .news h4{
+    font-weight: 400;
+}
+
+.right_side .latest_news:hover{
+    background-color: rgb(218, 216, 216);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    gap: 1rem;
+}
+
+.right_side .latest_news .one h6{
+    font-size: 12px;
+    color: rgb(39, 39, 39);
+}
+
+.right_side .latest_news i{
+    margin-top: 0.35rem;
+    margin-left: 1rem;
+    font-size: 6px;
+}
+.right_side .latest_news .two{
+    font-size: 13px;
+    margin-left: 2.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 15px;
+    color: gray;
+    align-items: center;
+    margin-left: 2.3rem;
+}
+
+
+.right_side .show_more i{
+    margin-top: 0.1rem;
+}
+
+
+
+/* RIGHT SIDE ENDS */
+
+
+
+
+
